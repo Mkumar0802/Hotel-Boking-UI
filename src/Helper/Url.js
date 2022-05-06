@@ -1,0 +1,1 @@
+export default Const = 'http://localhost:4000/'
