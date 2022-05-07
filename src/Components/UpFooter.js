@@ -88,11 +88,7 @@ function UpFooter() {
 
             </div>
             <div>
-                <div className='grid grid-cols-3 px-14' >
-                    <div className='flex sm:hidden   md:block'>
-                        <h1 className='bg-black  text-white  rounded-md  md:text-xlp-1 p-3   '>Get it on Google Play</h1>
-
-                    </div>
+                <div className='grid grid-cols-3 px-14 justify-center' >
                     <div>
                         <div className='sm:text-xl   md:text-5xl   grid grid-flow-col-dense animate-headShake'>
                             <span className='text-green-600'><ion-icon name="logo-whatsapp"></ion-icon> </span>
@@ -102,7 +98,12 @@ function UpFooter() {
                             <span className='text-red-600'><ion-icon name="logo-pinterest"></ion-icon> </span>
                         </div>
                     </div>
-                    <div className='flex px-32 sm:hidden   md:block'>
+                    <div className='flex sm:hidden   md:block'>
+                        <h1 className='bg-black  text-white  rounded-md  md:text-xlp-1 p-3   '>Get it on Google Play</h1>
+
+                    </div>
+
+                    <div className='flex  sm:hidden   md:block'>
                         <h1 className='bg-black  text-white  rounded-md  md:text-xlp-1 p-3   sm:hidden   md:block'>Get it on App Store</h1>
                     </div>
                 </div>
