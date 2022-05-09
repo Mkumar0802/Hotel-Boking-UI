@@ -1,14 +1,22 @@
 import { Link } from "react-router-dom";
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 
 
 function Footer() {
+    useEffect(() => {
+     
+        AOS.init({duration:2000});
+     
+    }, [])
     return (
         <div className=" bg-blue-800 text-white   text-xs md:text-sm py-10 p-5 ">
-            <div className="flex grid-cols-6  space-x-10 md:space-x-36 justify-center md:text-xl text-sm  animate-backInUp ">
+            <div  data-aos="fade-up"  className="flex grid-cols-6  space-x-10 md:space-x-36 justify-center md:text-xl text-sm   ">
 
-                <div className="">
+                <div   className="">
                     <ul className="  ">
                         <h1 className="text-semibold">
                             Hotels near me

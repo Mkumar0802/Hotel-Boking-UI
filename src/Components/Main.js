@@ -34,7 +34,7 @@ function Main() {
                         <div className="rounded-xl md:w-auto  md:h-4/6  h-5/6 w-full justify-center  ">
                             <div className="rounded-lg px-1 py-1   hover:bg-indigo-500 flex text-justify justify-center  ">
                                 <button className="text-white md:text-xl underline underline-offset-1 ">
-                                    <Link to="/light">Hotel </Link>
+                                    <Link to="/hotel">Hotel </Link>
                                 </button>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ function Main() {
                         <div className="rounded-xl md:w-auto  md:h-4/6  h-5/6 w-full justify-center  ">
                             <div className="rounded-lg px-1 py-1   hover:bg-indigo-500 flex text-justify justify-center  ">
                                 <button className="text-white md:text-xl underline underline-offset-1 ">
-                                    <Link to="/light">villas </Link>
+                                    <Link to="/villas">villas </Link>
                                 </button>
                             </div>
                         </div>
@@ -64,7 +64,7 @@ function Main() {
                         <div className="rounded-xl md:w-auto  md:h-4/6  h-5/6 w-full justify-center  ">
                             <div className="rounded-lg px-1 py-1  hover:bg-indigo-500 flex text-justify justify-center  ">
                                 <button className="text-white md:text-xl underline underline-offset-1 ">
-                                    <Link to="/light">Resort </Link>
+                                    <Link to="/Resort">Resort </Link>
                                 </button>
                             </div>
                         </div>

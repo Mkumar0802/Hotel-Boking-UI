@@ -1,9 +1,17 @@
-import React from 'react'
+
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 function UpFooter() {
+    useEffect(() => {
+     
+        AOS.init({duration:2000});
+     
+    }, [])
     return (
-        <div className=''>
-            <div className=' flex justify-center '>
+        <div   className=''>
+            <div   className=' flex justify-center '>
                 <h1 className='md:text-2xl text-xl font-radio font-semibold'>
                     World's leading chain of hotels and homes
                 </h1>
@@ -13,7 +21,7 @@ function UpFooter() {
                     More Destinations. More Ease. More Affordable.
                 </h2>
             </div>
-            <div className='animate-bounce font-medium'>
+            <div className=' font-medium'>
                 <div className=' flex justify-center'>
                     <div>
                         <h1>
@@ -88,24 +96,24 @@ function UpFooter() {
 
             </div>
             <div>
-                <div className='grid grid-cols-3 px-14 justify-center' >
-                    <div>
-                        <div className='sm:text-xl   md:text-5xl   grid grid-flow-col-dense animate-headShake'>
+                <div  data-aos="fade-right"  className='flex justify-center' >
+                   
+                        <div className='sm:text-xl   md:text-5xl space-x-5   grid grid-flow-col-dense animate-headShake'>
                             <span className='text-green-600'><ion-icon name="logo-whatsapp"></ion-icon> </span>
                             <span className='text-red-600'><ion-icon name="logo-youtube"></ion-icon> </span>
                             <span className='text-sky-500'><ion-icon name="logo-twitter"></ion-icon> </span>
                             <span className='text-pink-500'><ion-icon name="logo-instagram"></ion-icon> </span>
                             <span className='text-red-600'><ion-icon name="logo-pinterest"></ion-icon> </span>
                         </div>
-                    </div>
-                    <div className='flex sm:hidden   md:block'>
+                   
+                    {/* <div className='flex sm:hidden   md:block'>
                         <h1 className='bg-black  text-white  rounded-md  md:text-xlp-1 p-3   '>Get it on Google Play</h1>
 
                     </div>
 
                     <div className='flex  sm:hidden   md:block'>
                         <h1 className='bg-black  text-white  rounded-md  md:text-xlp-1 p-3   sm:hidden   md:block'>Get it on App Store</h1>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

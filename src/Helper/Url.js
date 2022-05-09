@@ -1,1 +1,1 @@
-export default Const = 'http://localhost:4000/'
+export const  URLDevelopment  = 'http://localhost:4000/'
