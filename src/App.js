@@ -18,7 +18,7 @@ function App() {
     <div className='bg-blue-100   min-h-screen'>
  
        <Routes>
-          <Route index element={<Home />} />
+          <Route index element={<Login />} />
           <Route path="login" element={< Login/>} />
           <Route path="home" element={<Home />} />
           <Route path="hotel" element={<Hotel/>} />
