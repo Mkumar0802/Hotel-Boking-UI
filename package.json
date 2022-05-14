@@ -15,6 +15,7 @@
     "postcss-loader": "^6.2.1",
     "razorpay": "^2.8.1",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
     "react-razorpay": "^1.1.5",
     "react-redux": "^8.0.1",
@@ -22,6 +23,9 @@
     "react-router-dom": "^6.3.0",
     "react-router-redux": "^4.0.8",
     "react-scripts": "5.0.1",
+    "react-toastify": "^9.0.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
     "tw-elements": "^1.0.0-alpha12",
     "web-vitals": "^2.1.4"
   },

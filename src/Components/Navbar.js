@@ -1,22 +1,35 @@
 
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 // import { Link } from "react-router-dom";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
+import {
+    Nav,
+    NavDropdown,
+} from "react-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
 
+import { logout } from ".././features/userAction";
 
 
 function Navbar() {
 
+    const dispatch = useDispatch();
 
+    const userLogin = useSelector((state) => state.userLogin);
+    const { userInfo } = userLogin;
+
+    const logoutHandler = () => {
+        dispatch(logout());
+    };
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
-     
-        AOS.init({duration:2000});
-     
+
+        AOS.init({ duration: 2000 });
+
     }, [])
-    
+
 
     return (
         <div className='text-white  '>
@@ -25,7 +38,7 @@ function Navbar() {
                 <div className='md:flex items-center justify-between   '>
                     <div className='text-2xl cursor-pointer    items-center font-[Poppins] '>
                         <div className='flex flex-col'>
-                            <h1  data-aos="fade-up"  className='font-radio md:text-3xl  '>Hotel Booking</h1>
+                            <h1 data-aos="fade-up" className='font-radio md:text-3xl  '>Hotel Booking</h1>
                         </div>
                     </div>
                     <div>
@@ -34,9 +47,33 @@ function Navbar() {
                     <div>
                         <h1 className=' md:text-xl border-2 p-1  rounded-md  hover:bg-blue-700 hidden md:block'>List your Property</h1>
                     </div>
-                    <div>
+                    {/* <Nav>
+                        {userInfo ? (
+                            <>
+
+                                <NavDropdown
+                                    title={`${userInfo.name}`}
+                                    id="collasible-nav-dropdown"
+                                >
+                                    <NavDropdown.Item href="/profile">
+
+                                        My Profile
+                                    </NavDropdown.Item>
+
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item onClick={logoutHandler}>
+                                        Logout
+                                    </NavDropdown.Item>
+                                </NavDropdown>
+                            </>
+                        ) : (
+                            <div className="  md:text-xl border-2 p-1  rounded-md bg-white text-blue-700 hover:bg-blue-200 hidden md:block">   <Nav.Link href="/login">Login</Nav.Link></div>
+                        )}
+                    </Nav> */}
+
+                    {/* <div>
                         <h1 className=' md:text-xl border-2 p-1  rounded-md bg-white text-blue-700 hover:bg-blue-200 hidden md:block'>Login</h1>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

@@ -6,6 +6,9 @@ import Hotel from './Components/Hotel';
 import Resort from './Components/Resort';
 import Villas from './Components/Villas';
 import Payment from './Components/Payment';
+import Login from './Components/Login';
+import Register from './Components/Register';
+import Footer from './Components/Footer';
 
 
 function App() {
@@ -13,16 +16,16 @@ function App() {
   return (
 
     <div className='bg-blue-100   min-h-screen'>
-   
+ 
        <Routes>
           <Route index element={<Home />} />
-          {/* <Route path="login" element={< Login/>} /> */}
+          <Route path="login" element={< Login/>} />
           <Route path="home" element={<Home />} />
           <Route path="hotel" element={<Hotel/>} />
           <Route path="resort" element={<Resort />} />
           <Route path="villas" element={<Villas/>} />
           <Route path="payment" element={<Payment/>} />
-          {/* <Route path="register" element={<Register />} /> */}
+          <Route path="register" element={<Register />} />
          
           {/* <Route path="cart" element={<Cart />} />
         
@@ -37,7 +40,7 @@ function App() {
             }
           />
         </Routes>
-        
+        <Footer/>
     </div>
   );
 }
