@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Home from './Components/Home';
 import {  Route, Routes } from "react-router-dom";
 import './index.css' // tailwind
@@ -9,6 +10,7 @@ import Payment from './Components/Payment';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Footer from './Components/Footer';
+
 
 
 function App() {

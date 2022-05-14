@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { toast } from 'react-toastify';
+
+
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import Loading from "../utilltes/Loading";
 import ValidationError from "../utilltes/ValidationError";
 import { login } from ".././features/userAction";
+
 
 
 function Login() {
@@ -19,7 +21,6 @@ function Login() {
 
   useEffect(() => {
     if (userInfo) {
-      toast.success(`welcome ${userInfo.name}`);
       navigate('/home')
     }
   }, [navigate, userInfo]);
